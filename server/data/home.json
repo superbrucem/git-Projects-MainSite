@@ -1,0 +1,57 @@
+{
+  "hero": {
+    "name": "Bruce Maber",
+    "title": "Versatile Software Developer: Web, Windows, and Networking",
+    "description": "I build modern web applications with a focus on performance, user experience, and clean code. Check out my projects and find out more about my journey in software development."
+  },
+  "featuredProjects": [
+    {
+      "id": 1,
+      "title": "This Website",
+      "description": "A modern dashboard for e-commerce analytics with real-time data visualization.",
+      "repoUrl": "https://github.com/brucemaber/ecommerce-dashboard",
+      "imageUrl": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97",
+      "stars": 45,
+      "forks": 12,
+      "views": 156,
+      "featured": true,
+      "technologies": [
+        { "id": 1, "projectId": 1, "technology": "React", "category": "frontend" },
+        { "id": 2, "projectId": 1, "technology": "Node.js", "category": "backend" },
+        { "id": 3, "projectId": 1, "technology": "Express.js", "category": "frontend" }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Task Manager App",
+      "description": "A productivity app for managing tasks with drag-and-drop interface and reminders.",
+      "repoUrl": "https://github.com/brucemaber/task-manager",
+      "imageUrl": "https://images.unsplash.com/photo-1575089976121-8ed7b2a54265",
+      "stars": 32,
+      "forks": 8,
+      "views": 98,
+      "featured": true,
+      "technologies": [
+        { "id": 4, "projectId": 2, "technology": "Next.js", "category": "frontend" },
+        { "id": 5, "projectId": 2, "technology": "Firebase", "category": "backend" },
+        { "id": 6, "projectId": 2, "technology": "TypeScript", "category": "language" }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Weather Forecast",
+      "description": "A beautiful weather forecast application with animated visualizations.",
+      "repoUrl": "https://github.com/brucemaber/weather-forecast",
+      "imageUrl": "https://images.unsplash.com/photo-1616469829941-c7200edec809",
+      "stars": 27,
+      "forks": 5,
+      "views": 84,
+      "featured": true,
+      "technologies": [
+        { "id": 7, "projectId": 3, "technology": "Vue.js", "category": "frontend" },
+        { "id": 8, "projectId": 3, "technology": "Express", "category": "backend" },
+        { "id": 9, "projectId": 3, "technology": "D3.js", "category": "frontend" }
+      ]
+    }
+  ]
+}
