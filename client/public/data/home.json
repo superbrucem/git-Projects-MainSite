@@ -8,8 +8,8 @@
     {
       "id": 1,
       "title": "This Website",
-      "description": "A modern dashboard for e-commerce analytics with real-time data visualization.",
-      "repoUrl": "https://github.com/brucemaber/ecommerce-dashboard",
+      "description": "A modern website for listing GitHub projects.",
+      "repoUrl": "https://github.com/superbrucem/git-Projects-MainSite",
       "imageUrl": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97",
       "stars": 45,
       "forks": 12,
