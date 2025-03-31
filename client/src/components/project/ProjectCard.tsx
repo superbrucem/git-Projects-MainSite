@@ -7,22 +7,32 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ project, featured = false }: ProjectCardProps) => {
   const lastUpdated = () => {
-    const updatedDate = new Date(project.updatedAt);
-    const now = new Date();
-    const diffTime = Math.abs(now.getTime() - updatedDate.getTime());
-    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-    
-    if (diffDays < 7) {
-      return `Updated ${diffDays} ${diffDays === 1 ? 'day' : 'days'} ago`;
-    } else if (diffDays < 30) {
-      const weeks = Math.floor(diffDays / 7);
-      return `Updated ${weeks} ${weeks === 1 ? 'week' : 'weeks'} ago`;
-    } else if (diffDays < 365) {
-      const months = Math.floor(diffDays / 30);
-      return `Updated ${months} ${months === 1 ? 'month' : 'months'} ago`;
-    } else {
-      const years = Math.floor(diffDays / 365);
-      return `Updated ${years} ${years === 1 ? 'year' : 'years'} ago`;
+    try {
+      const updatedDate = project.updatedAt ? new Date(project.updatedAt) : new Date();
+      
+      // Check if the date is valid
+      if (isNaN(updatedDate.getTime())) {
+        return 'Recently updated';
+      }
+
+      const now = new Date();
+      const diffTime = Math.abs(now.getTime() - updatedDate.getTime());
+      const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+      
+      if (diffDays < 7) {
+        return `Updated ${diffDays} ${diffDays === 1 ? 'day' : 'days'} ago`;
+      } else if (diffDays < 30) {
+        const weeks = Math.floor(diffDays / 7);
+        return `Updated ${weeks} ${weeks === 1 ? 'week' : 'weeks'} ago`;
+      } else if (diffDays < 365) {
+        const months = Math.floor(diffDays / 30);
+        return `Updated ${months} ${months === 1 ? 'month' : 'months'} ago`;
+      } else {
+        const years = Math.floor(diffDays / 365);
+        return `Updated ${years} ${years === 1 ? 'year' : 'years'} ago`;
+      }
+    } catch (error) {
+      return 'Recently updated';
     }
   };
 
@@ -141,3 +151,5 @@ const ProjectCard = ({ project, featured = false }: ProjectCardProps) => {
 };
 
 export default ProjectCard;
+
+
