@@ -150,9 +150,9 @@ export class MemStorage implements IStorage {
       description: "A modern dashboard for e-commerce analytics with real-time data visualization.",
       repoUrl: "https://github.com/brucemaber/ecommerce-dashboard",
       imageUrl: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-      stars: 45,
-      forks: 12,
-      views: 156,
+      stars: 0,
+      forks: 0,
+      views: 0,
       featured: true
     });
     
@@ -178,9 +178,9 @@ export class MemStorage implements IStorage {
       description: "A productivity app for managing tasks with drag-and-drop interface and reminders.",
       repoUrl: "https://github.com/brucemaber/task-manager",
       imageUrl: "https://images.unsplash.com/photo-1575089976121-8ed7b2a54265?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-      stars: 32,
-      forks: 8,
-      views: 98,
+      stars: 0,
+      forks: 0,
+      views: 0,
       featured: true
     });
     
@@ -206,9 +206,9 @@ export class MemStorage implements IStorage {
       description: "A beautiful weather forecast application with animated visualizations.",
       repoUrl: "https://github.com/brucemaber/weather-forecast",
       imageUrl: "https://images.unsplash.com/photo-1616469829941-c7200edec809?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-      stars: 27,
-      forks: 5,
-      views: 84,
+      stars: 0,
+      forks: 0,
+      views: 0,
       featured: true
     });
     
@@ -234,9 +234,9 @@ export class MemStorage implements IStorage {
       description: "A full-featured blog platform with markdown support, user authentication, and commenting system.",
       repoUrl: "https://github.com/brucemaber/blog-platform",
       imageUrl: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-      stars: 24,
-      forks: 7,
-      views: 78,
+      stars: 0,
+      forks: 0,
+      views: 0,
       featured: false
     });
     
@@ -262,9 +262,9 @@ export class MemStorage implements IStorage {
       description: "A secure file sharing application with end-to-end encryption and expiring links.",
       repoUrl: "https://github.com/brucemaber/file-sharing",
       imageUrl: "https://images.unsplash.com/photo-1526498460520-4c246339dccb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-      stars: 18,
-      forks: 3,
-      views: 67,
+      stars: 0,
+      forks: 0,
+      views: 0,
       featured: false
     });
     
@@ -290,9 +290,9 @@ export class MemStorage implements IStorage {
       description: "A recipe discovery and management app with meal planning and shopping list features.",
       repoUrl: "https://github.com/brucemaber/recipe-app",
       imageUrl: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-      stars: 15,
-      forks: 2,
-      views: 42,
+      stars: 0,
+      forks: 0,
+      views: 0,
       featured: false
     });
     
@@ -315,3 +315,4 @@ export class MemStorage implements IStorage {
 }
 
 export const storage = new MemStorage();
+

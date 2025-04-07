@@ -8,7 +8,8 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ project, featured = false }: ProjectCardProps) => {
   const [updatedDate, setUpdatedDate] = useState(new Date());
-  
+  const [repoStats, setRepoStats] = useState({ stars: 0, forks: 0 });
+
   useEffect(() => {
     const fetchLastCommitDate = async () => {
       try {
@@ -27,6 +28,25 @@ const ProjectCard = ({ project, featured = false }: ProjectCardProps) => {
     if (project.repoUrl.includes('superbrucem/git-Projects-MainSite')) {
       fetchLastCommitDate();
     }
+  }, [project.repoUrl]);
+
+  useEffect(() => {
+    const fetchRepoStats = async () => {
+      try {
+        const response = await fetch(`https://api.github.com/repos/${project.repoUrl.split('github.com/')[1]}`);
+        if (response.ok) {
+          const data = await response.json();
+          setRepoStats({
+            stars: data.stargazers_count,
+            forks: data.forks_count
+          });
+        }
+      } catch (error) {
+        console.error('Error fetching repo stats:', error);
+      }
+    };
+
+    fetchRepoStats();
   }, [project.repoUrl]);
 
   const lastUpdated = () => {
@@ -70,8 +90,8 @@ const ProjectCard = ({ project, featured = false }: ProjectCardProps) => {
               {project.title}
             </h3>
             <div className="flex items-center gap-2 text-gray-500 dark:text-gray-400 text-sm">
-              <span className="flex items-center"><i className="fas fa-star mr-1"></i> {project.stars}</span>
-              <span className="flex items-center"><i className="fas fa-code-branch mr-1"></i> {project.forks}</span>
+              <span className="flex items-center"><i className="fas fa-star mr-1"></i> {repoStats.stars}</span>
+              <span className="flex items-center"><i className="fas fa-code-branch mr-1"></i> {repoStats.forks}</span>
             </div>
           </div>
           <p className="text-gray-600 dark:text-gray-400 text-sm mb-4">
@@ -155,9 +175,8 @@ const ProjectCard = ({ project, featured = false }: ProjectCardProps) => {
         </div>
         <div className="flex flex-wrap items-center justify-between text-sm">
           <div className="flex items-center gap-3 text-gray-500 dark:text-gray-400">
-            <span className="flex items-center"><i className="fas fa-star mr-1"></i> {project.stars}</span>
-            <span className="flex items-center"><i className="fas fa-code-branch mr-1"></i> {project.forks}</span>
-            <span className="flex items-center"><i className="fas fa-eye mr-1"></i> {project.views}</span>
+            <span className="flex items-center"><i className="fas fa-star mr-1"></i> {repoStats.stars}</span>
+            <span className="flex items-center"><i className="fas fa-code-branch mr-1"></i> {repoStats.forks}</span>
           </div>
           <span className="text-xs text-gray-500 dark:text-gray-400">{lastUpdated()}</span>
         </div>
@@ -167,6 +186,7 @@ const ProjectCard = ({ project, featured = false }: ProjectCardProps) => {
 };
 
 export default ProjectCard;
+
 
 
 
