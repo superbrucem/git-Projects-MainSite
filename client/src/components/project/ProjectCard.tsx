@@ -1,4 +1,5 @@
 import { ProjectWithTechnologies } from "@shared/schema";
+import { useState, useEffect } from 'react';
 
 interface ProjectCardProps {
   project: ProjectWithTechnologies;
@@ -6,15 +7,30 @@ interface ProjectCardProps {
 }
 
 const ProjectCard = ({ project, featured = false }: ProjectCardProps) => {
+  const [updatedDate, setUpdatedDate] = useState(new Date());
+  
+  useEffect(() => {
+    const fetchLastCommitDate = async () => {
+      try {
+        const response = await fetch('https://api.github.com/repos/superbrucem/git-Projects-MainSite/commits');
+        if (response.ok) {
+          const commits = await response.json();
+          if (commits.length > 0) {
+            setUpdatedDate(new Date(commits[0].commit.committer.date));
+          }
+        }
+      } catch (error) {
+        console.error('Error fetching commit date:', error);
+      }
+    };
+
+    if (project.repoUrl.includes('superbrucem/git-Projects-MainSite')) {
+      fetchLastCommitDate();
+    }
+  }, [project.repoUrl]);
+
   const lastUpdated = () => {
     try {
-      const updatedDate = project.updatedAt ? new Date(project.updatedAt) : new Date();
-      
-      // Check if the date is valid
-      if (isNaN(updatedDate.getTime())) {
-        return 'Recently updated';
-      }
-
       const now = new Date();
       const diffTime = Math.abs(now.getTime() - updatedDate.getTime());
       const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
@@ -151,5 +167,6 @@ const ProjectCard = ({ project, featured = false }: ProjectCardProps) => {
 };
 
 export default ProjectCard;
+
 
 
