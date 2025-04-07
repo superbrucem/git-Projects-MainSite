@@ -40,9 +40,9 @@
     {
       "id": 3,
       "title": "AI Assistant",
-      "description": "A beautiful weather forecast application with animated visualizations.",
+      "description": "A site that uses Deepseek R3 AI language model to answer questions.",
       "repoUrl": "https://github.com/superbrucem/git-Projects-Site-ASPNet",
-      "imageUrl": "https://images.unsplash.com/photo-1616469829941-c7200edec809",
+      "imageUrl": "https://images.unsplash.com/photo-1460925895917-afdab827c52f",
       "stars": 0,
       "forks": 0,
       "views": 0,
@@ -52,7 +52,23 @@
         { "id": 8, "projectId": 3, "technology": "MVC", "category": "frontend" },
         { "id": 9, "projectId": 3, "technology": "C#", "category": "language" }
       ]
+    },
+    {
+      "id": 4,
+      "title": "PHP Ecommerce Site with Sql Server Backend",
+      "description": "A sample ecommerce site that is under construction.",
+      "repoUrl": "https://github.com/superbrucem/git-Projects-Site-PHP",
+      "imageUrl": "https://images.unsplash.com/photo-1460925895917-afdab827c52f",
+      "stars": 0,
+      "forks": 0,
+      "views": 0,
+      "featured": true,
+      "technologies": [
+        { "id": 10, "projectId": 4, "technology": "PHP 8.3", "category": "frontend" },
+        { "id": 11, "projectId": 4, "technology": "SQL Server Database", "category": "language" },
+        { "id": 12, "projectId": 4, "technology": "Tailwind CSS", "category": "frontend" }
+      ]
     }
-    
   ]
 }
+
