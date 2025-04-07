@@ -23,18 +23,18 @@
     },
     {
       "id": 2,
-      "title": "Task Manager App",
-      "description": "A productivity app for managing tasks with drag-and-drop interface and reminders.",
+      "title": "YouTube to MP3 Converter",
+      "description": "A utility app for download and converting youtube videos to mp3 format.",
       "repoUrl": "https://github.com/brucemaber/task-manager",
       "imageUrl": "https://images.unsplash.com/photo-1575089976121-8ed7b2a54265",
-      "stars": 32,
-      "forks": 8,
-      "views": 98,
+      "stars": 0,
+      "forks": 0,
+      "views": 0,
       "featured": true,
       "technologies": [
-        { "id": 4, "projectId": 2, "technology": "Next.js", "category": "frontend" },
-        { "id": 5, "projectId": 2, "technology": "Firebase", "category": "backend" },
-        { "id": 6, "projectId": 2, "technology": "TypeScript", "category": "language" }
+        { "id": 4, "projectId": 2, "technology": "DJango", "category": "frontend" },
+        { "id": 5, "projectId": 2, "technology": "Python", "category": "backend" },
+        { "id": 6, "projectId": 2, "technology": "vanillaJS", "category": "language" }
       ]
     },
     {
@@ -53,5 +53,6 @@
         { "id": 9, "projectId": 3, "technology": "D3.js", "category": "frontend" }
       ]
     }
+    
   ]
 }
