@@ -25,7 +25,7 @@
       "id": 2,
       "title": "YouTube to MP3 Converter",
       "description": "A utility app for download and converting youtube videos to mp3 format.",
-      "repoUrl": "https://github.com/brucemaber/task-manager",
+      "repoUrl": "https://github.com/superbrucem/git-Projects-Site-Django",
       "imageUrl": "https://images.unsplash.com/photo-1575089976121-8ed7b2a54265",
       "stars": 0,
       "forks": 0,
@@ -39,18 +39,18 @@
     },
     {
       "id": 3,
-      "title": "Weather Forecast",
+      "title": "AI Assistant",
       "description": "A beautiful weather forecast application with animated visualizations.",
-      "repoUrl": "https://github.com/brucemaber/weather-forecast",
+      "repoUrl": "https://github.com/superbrucem/git-Projects-Site-ASPNet",
       "imageUrl": "https://images.unsplash.com/photo-1616469829941-c7200edec809",
-      "stars": 27,
-      "forks": 5,
-      "views": 84,
+      "stars": 0,
+      "forks": 0,
+      "views": 0,
       "featured": true,
       "technologies": [
-        { "id": 7, "projectId": 3, "technology": "Vue.js", "category": "frontend" },
-        { "id": 8, "projectId": 3, "technology": "Express", "category": "backend" },
-        { "id": 9, "projectId": 3, "technology": "D3.js", "category": "frontend" }
+        { "id": 7, "projectId": 3, "technology": "ASP.NET Core 9.0", "category": "frontend" },
+        { "id": 8, "projectId": 3, "technology": "MVC", "category": "frontend" },
+        { "id": 9, "projectId": 3, "technology": "C#", "category": "language" }
       ]
     }
     
