@@ -34,6 +34,8 @@ const SKILLS = {
     "Docker",
     "Microsoft Access",
     "Visual Studio",
+    "Dynamics CRM 365",
+    "Power Apps(Model and Canvas)",
     "VS Code",
     "DevOps",
     "Agile"
