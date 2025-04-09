@@ -27,7 +27,8 @@ const SKILLS = {
     "Python",
     "SQL Server",
     "Linux",
-    "MySQL"
+    "MySQL",
+    "Powershell"
   ],
   tools: [
     "Git",
