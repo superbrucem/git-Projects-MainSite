@@ -26,6 +26,7 @@ const SKILLS = {
     "PHP",
     "Python",
     "SQL Server",
+    "Linux",
     "MySQL"
   ],
   tools: [
