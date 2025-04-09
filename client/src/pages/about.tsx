@@ -20,6 +20,7 @@ const SKILLS = {
     "PostgreSQL",
     "GraphQL",
     "REST APIs",
+    "Django",
     "Firebase",
     ".NET Core",
     "PHP",
