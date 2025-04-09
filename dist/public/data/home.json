@@ -23,35 +23,53 @@
     },
     {
       "id": 2,
-      "title": "Task Manager App",
-      "description": "A productivity app for managing tasks with drag-and-drop interface and reminders.",
-      "repoUrl": "https://github.com/brucemaber/task-manager",
+      "title": "YouTube to MP3 Converter",
+      "description": "A utility app for download and converting youtube videos to mp3 format.",
+      "repoUrl": "https://github.com/superbrucem/git-Projects-Site-Django",
       "imageUrl": "https://images.unsplash.com/photo-1575089976121-8ed7b2a54265",
-      "stars": 32,
-      "forks": 8,
-      "views": 98,
+      "stars": 0,
+      "forks": 0,
+      "views": 0,
       "featured": true,
       "technologies": [
-        { "id": 4, "projectId": 2, "technology": "Next.js", "category": "frontend" },
-        { "id": 5, "projectId": 2, "technology": "Firebase", "category": "backend" },
-        { "id": 6, "projectId": 2, "technology": "TypeScript", "category": "language" }
+        { "id": 4, "projectId": 2, "technology": "DJango", "category": "frontend" },
+        { "id": 5, "projectId": 2, "technology": "Python", "category": "backend" },
+        { "id": 6, "projectId": 2, "technology": "vanillaJS", "category": "language" }
       ]
     },
     {
       "id": 3,
-      "title": "Weather Forecast",
-      "description": "A beautiful weather forecast application with animated visualizations.",
-      "repoUrl": "https://github.com/brucemaber/weather-forecast",
-      "imageUrl": "https://images.unsplash.com/photo-1616469829941-c7200edec809",
-      "stars": 27,
-      "forks": 5,
-      "views": 84,
+      "title": "AI Assistant",
+      "description": "A site that uses Deepseek V3 AI language model to answer questions.",
+      "repoUrl": "https://github.com/superbrucem/git-Projects-Site-ASPNet",
+      "imageUrl": "https://images.unsplash.com/photo-1460925895917-afdab827c52f",
+      "stars": 0,
+      "forks": 0,
+      "views": 0,
       "featured": true,
       "technologies": [
-        { "id": 7, "projectId": 3, "technology": "Vue.js", "category": "frontend" },
-        { "id": 8, "projectId": 3, "technology": "Express", "category": "backend" },
-        { "id": 9, "projectId": 3, "technology": "D3.js", "category": "frontend" }
+        { "id": 7, "projectId": 3, "technology": "ASP.NET Core 9.0", "category": "frontend" },
+        { "id": 8, "projectId": 3, "technology": "MVC", "category": "frontend" },
+        { "id": 9, "projectId": 3, "technology": "C#", "category": "language" }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "PHP Database Grid Demo Site",
+      "description": "A sample database grid site.",
+      "repoUrl": "https://github.com/superbrucem/git-Projects-Site-PHP",
+      "imageUrl": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+      "stars": 0,
+      "forks": 0,
+      "views": 0,
+      "featured": true,
+      "technologies": [
+        { "id": 10, "projectId": 4, "technology": "PHP 8.3", "category": "frontend" },
+        { "id": 11, "projectId": 4, "technology": "SQL Server Database", "category": "language" },
+        { "id": 12, "projectId": 4, "technology": "Bulma CSS", "category": "frontend" }
       ]
     }
   ]
 }
+
+
