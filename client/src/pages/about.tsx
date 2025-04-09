@@ -8,7 +8,10 @@ const SKILLS = {
     "JavaScript",
     "HTML/CSS",
     "Tailwind CSS",
-    "Redux"
+    "Redux",
+    "jQuery",
+    "Web APIs",
+    "GraphQL"
   ],
   backend: [
     "Node.js",
@@ -17,16 +20,20 @@ const SKILLS = {
     "PostgreSQL",
     "GraphQL",
     "REST APIs",
-    "Firebase"
+    "Firebase",
+    ".NET Core",
+    "PHP",
+    "Python",
+    "SQL Server",
+    "MySQL"
   ],
   tools: [
     "Git",
     "Docker",
-    "AWS",
-    "Vercel",
-    "CI/CD",
-    "Jest",
-    "Figma"
+    "Visual Studio",
+    "VS Code",
+    "DevOps",
+    "Agile"
   ]
 } as const;
 
@@ -156,6 +163,7 @@ const About = () => {
 };
 
 export default About;
+
 
 
 
