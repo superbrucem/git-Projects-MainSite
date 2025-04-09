@@ -30,6 +30,7 @@ const SKILLS = {
   tools: [
     "Git",
     "Docker",
+    "Microsoft Access",
     "Visual Studio",
     "VS Code",
     "DevOps",
