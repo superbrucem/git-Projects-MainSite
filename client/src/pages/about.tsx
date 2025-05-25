@@ -100,7 +100,7 @@ const About = () => {
             </div>
             
             <a 
-              href="https://docs.google.com/document/d/11hMlzQJy4SEK87YyUfTNGT9mDsH0jGyZ/edit?usp=sharing&ouid=101015884027473602779&rtpof=true&sd=true"
+              href="https://docs.google.com/document/d/11p5P9EaOQSVEecEyoZfZhGqlhne8ZB7b/edit#heading=h.d9fv2ia2jaaq"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center w-full rounded-md bg-primary text-primary-foreground px-4 py-2.5 text-sm font-medium shadow-sm hover:bg-primary/90 hover:text-black transition-colors"
